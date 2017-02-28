@@ -48,16 +48,16 @@ Sample test: [sample_test.zip](sample_test.zip)
 
 a and b are very large numbers (64 bits), and there are many test cases in an input file, so you cannot just use a trivial algorithm like running a loop from a to b, and adding digits one by one. Following is my solution:  
 
->	Let D(a, b) the digit sum of even number of interval [a, b].   
+>	Let D(a, b) the digit sum of even numbers of interval [a, b].   
 >	If a is even, then D(a, b) = D(0, b) - D(0, a-1).  
 >	Else D(a, b) = D(0, b) - D(0, a)  
 >	For convenience, let D(b) = D(0, b).  
->	We look for a formular to calculate D(X). Let N(X) the number of even number of [0, X]. Calculate N(X) is trivial.  
->	Let X a four digit number - abcd, then we have:  
->	    D(abcd) = a\*(a-1)/2\*N(999) + a\*D(999) + a\*N(bcd) + D(bcd).  
+>	We look for a formular to calculate D(X). Let N(X) the number of even numbers of [0, X]. Calculate N(X) is trivial.  
+>	Let X a four-digit number - abcd, then we have:  
+>	\ \ \ \ D(abcd) = a\*(a-1)/2\*N(999) + a\*D(999) + a\*N(bcd) + D(bcd).  
 >	In case X is one digit number:  
->       + if X is odd: D(X) = D(X-1)  
->       + if X is even: D(X) = X\*N(X)/2
+>   \ \ \ \ + if X is odd: D(X) = D(X-1)  
+>   \ \ \ \ + if X is even: D(X) = X\*N(X)/2
 		
 With the above formular, you can use recursion with memoization to finish the task.  
   

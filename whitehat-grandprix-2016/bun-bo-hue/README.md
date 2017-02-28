@@ -1,7 +1,7 @@
 # Category: ACM/Programming
 
 ## Problem:
-```bash
+```
             Trending Topic
 Imagine you are in the hiring process for a
 company whose principal activity is the

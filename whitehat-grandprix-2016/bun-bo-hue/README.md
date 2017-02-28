@@ -93,3 +93,9 @@ def my_function(w):
  return 'WhiteHat{'+sha1+'}'
 =======================================	
 ```
+
+So you have to leak the first word of the output of test 2. This is kind of SQL blind injection, but not so difficult. You just have to code some binary searching.
+
+Here is my code:
+* [trendingtopic_exploit.py](trendingtopic_exploit.py)
+* [exploit_trendingtopic.py](exploit_trendingtopic.py)

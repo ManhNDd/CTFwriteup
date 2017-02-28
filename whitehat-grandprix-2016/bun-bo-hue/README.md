@@ -62,9 +62,9 @@ Sample test: [sample_test.zip](sample_test.zip)
 ## Solution:
 
 This is a simple programming problem:  
-	* get list of all words of latest 7 days  
-	* save a queue of 7 days, each day is a dict  
-	* when getting a query, get all words into a dict, convert to list, then sort, then output  
+* get list of all words of latest 7 days  
+* save a queue of 7 days, each day is a dict  
+* when getting a query, get all words into a dict, convert to list, then sort, then output  
 
 Source code: [trendingtopic.py](trendingtopic.py)
 

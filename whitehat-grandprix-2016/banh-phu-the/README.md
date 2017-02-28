@@ -54,10 +54,10 @@ a and b are very large numbers (64 bits), and there are many test cases in an in
 >	For convenience, let D(b) = D(0, b).  
 >	We look for a formular to calculate D(X). Let N(X) the number of even number of [0, X]. Calculate N(X) is trivial.  
 >	Let X a four digit number - abcd, then we have:  
->		D(abcd) = a*(a-1)/2*N(999) + a*D(999) + a*N(bcd) + D(bcd).  
+>	    D(abcd) = a\*(a-1)/2\*N(999) + a\*D(999) + a\*N(bcd) + D(bcd).  
 >	In case X is one digit number:  
->		* if X is odd: D(X) = D(X-1)  
->		* if X is even: D(X) = X*N(X)/2
+>       + if X is odd: D(X) = D(X-1)  
+>       + if X is even: D(X) = X\*N(X)/2
 		
 With the above formular, you can use recursion with memoization to finish the task.  
   

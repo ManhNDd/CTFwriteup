@@ -2,7 +2,7 @@
 
 ## Problem:
 Exploit a web service hosting objdump functions.
-![alt text](https://lh3.googleusercontent.com/gGdlEyZNyf052u4A_MlTYJq1JCsbmhdvTcRyfAU4GXAPBLrAjpDGSYA3viBQy6YEJOwdEczuL4qZfRua-PNq=w1280-h918-rw "Image - objdump service")
+![alt text](image/objdump_service.PNG "Image - objdump service")
 The objdump is from binutils 2.24, and it is modified so that it is pwnable. The source code, binary objdump file and configuring info are provided: https://drive.google.com/drive/folders/0B943jnA--r3YY0pmR0ZLUDIzWDQ
 ![alt text](https://lh3.googleusercontent.com/ttZFWAzvwze9VgSmf2oo9VEEuBtotIdSw3mMbxeY5RoO0qInj3_5ZgRkepOV1648Db863hRnwxTy5xKJHx64=w1280-h918-rw "Image - objdump service info")
 

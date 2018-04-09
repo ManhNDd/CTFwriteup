@@ -7,20 +7,20 @@
 
 If ur smart enough, send ur solution to https://math-killer.ctf.insecurity-insa.fr/solve?a=...&b=...&c=...
 ```
-<br />
+
 ![](chall.png)
-<br />
+
 ## Solution:
 According to the image, the equation to be solved:
 ```
     a/(b+c) + b/(a+c) + c/(a+b) = 6
 ```
 By submit some input like a=1&b=2&c=3.0, I figure out that a, b, c must be integers (both positive and negative accepted):
-<br />
+
 ![](Condition1.PNG)
-<br />
+
 ![](Condition2.PNG)
-<br />
+
 Let's solve the equation. I tried to set a = 0:
 ```
             b/c + c/b = 6
@@ -45,12 +45,11 @@ Let z unknown and x, y coefficients, we transform (*) into quaratic equation, an
 or  z = (15*x*y - x^2 - y^2 - sqrt(Delta))/2/(x+y)
 ```
 Then, to find x, y such that z is integer, I used excel to get a table of z values in some x, y ranges. To learn how to get the table, watch https://www.youtube.com/watch?v=jUoo_7KQfO0.
-<br />
+
 ![](table1.PNG)
-<br />
+
 From the table, we get some integer roots. With (x, y, z) = (6, 4, 30), we get (a, b, c) = (14, 16, -10)
 Submit and we get the flag:
 **INSA{try_positive_solutions_now}**
-<br />
+
 ![](Flag.PNG)
-<br />

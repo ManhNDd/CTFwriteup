@@ -10,11 +10,6 @@ If ur smart enough, send ur solution to https://math-killer.ctf.insecurity-insa.
 
 ![](chall.png)
 
-Misc is a broad CTF category that does not map well to any particular job role in the security. You may have to solve math, play games, code script tools or write algorithms.
-
-Forensics challenges can include file format analysis, steganography, memory dump analysis, or network packet capture analysis. You have to examine and process a hidden piece of information out of static data files.
-
-
 ## Solution:
 According to the image, the equation to be solved:
 ```

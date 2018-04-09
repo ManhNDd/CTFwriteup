@@ -10,12 +10,17 @@ If ur smart enough, send ur solution to https://math-killer.ctf.insecurity-insa.
 
 ![](chall.png)
 
+Misc is a broad CTF category that does not map well to any particular job role in the security. You may have to solve math, play games, code script tools or write algorithms.
+
+Forensics challenges can include file format analysis, steganography, memory dump analysis, or network packet capture analysis. You have to examine and process a hidden piece of information out of static data files.
+
+
 ## Solution:
 According to the image, the equation to be solved:
 ```
     a/(b+c) + b/(a+c) + c/(a+b) = 6
 ```
-By submit some input like a=1&b=2&c=3.0, I figure out that a, b, c must be integers (both positive and negative accepted):
+By submit some input like a=1&b=2&c=3.0, I figure out that a, b, c must be integers (both positives and negatives accepted):
 
 ![](Condition1.PNG)
 
@@ -27,12 +32,13 @@ Let's solve the equation. I tried to set a = 0:
     <=>     b = (3+2*sqrt(2))*c
         or  b = (3-2*sqrt(2))*c
 ```
-=> Cannot get integer roots
+=> Cannot get integer roots.
+
 I also tried to solve the origin equation with a unknown and b, c coefficients, and got a very complex cubic equation :( => failed
 
-Let's try to transform the equation. Let x = b+c, y = a+c, z = a+b => x, y, z are non-zero integers, and must be all odd or even.
+Let's try to transform the equation. Let x = b+c, y = a+c, z = a+b => x, y, z are non-zero integers.
 ```
-    =>  a = (y+z-x)/2, b = (x+z-y)/2, c = (x+y-z)/2
+    =>  a = (y+z-x)/2, b = (x+z-y)/2, c = (x+y-z)/2 (=> x, y, z must be all odd or even)
     
             a/(b+c) + b/(a+c) + c/(a+b) = 6
     <=>     (y+z-x)/(2*x) + (x+z-y)/(2*y) + (x+y-z)/(2*z) = 6 (*)

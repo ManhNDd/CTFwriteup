@@ -14,8 +14,8 @@ According to the image, the equation to be solved:
     a/(b+c) + b/(a+c) + c/(a+b) = 6
 ```
 By submit some input like a=1&b=2&c=3.0, I figure out that a, b, c must be integers (both positive and negative accepted):
-![](Condition1.png)
-![](Condition2.png)
+![](Condition1.PNG)
+![](Condition2.PNG)
 Let's solve the equation. I tried to set a = 0:
 ```
             b/c + c/b = 6

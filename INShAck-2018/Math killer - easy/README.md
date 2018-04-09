@@ -1,14 +1,15 @@
 # Category: Misc/Math
 
 ## Problem:
-Description:
+**Description:**
 ```
 95% of ppl can't solve this equation!!!
 
 If ur smart enough, send ur solution to https://math-killer.ctf.insecurity-insa.fr/solve?a=...&b=...&c=...
 ```
-Image: chall.png
-The service allow you to input root of the equation, and give you flag if you 
+**Include**:
+![](chall.png)
+So we The service allow you to input root of the equation, and give you flag if 
 ## Solution:
 According to the image, the equation to be solved:
     a/(b+c) + b/(a+c) + c/(a+b) = 6
